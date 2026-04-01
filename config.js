@@ -1,78 +1,54 @@
 // config.js
 const slideData = [
-  {
-    img: "images/joiners-Soye.jpg",
-    title: "New Joiners: Intern Soye and Technical support Joel",
-    desc: "We welcome Soye (IT Intern) and Joel (Technical Support) to the NLCC IT team. Their onboarding has been approved to expand end-user support capabilities to improve response times & support coverage.",
+ {
+    img: "images/cancer-companion.jpg",  // replace with actual image path
+    title: "📱 Cancer Patient Companion App",
+    desc: "A dedicated mobile companion app that empowers cancer patients with symptom tracking, medication reminders, appointment scheduling, and direct communication with their care team for improved adherence and quality of life.",
   },
   {
-    img: "images/banner-8.jpg",
-    title: "🖥️ New CT-Box Integration with Aria",
-    desc: "The successful integration of the new CT-Box with Varian’s Aria platform enables faster image acquisition and more seamless treatment planning.",
+    img: "images/gesture-feedback.jpg",
+    title: "✋ Gesture-Based Feedback Solution",
+    desc: "Touchless gesture recognition system enabling patients and staff to provide real-time feedback, request assistance, or control interfaces in sterile or hands-free clinical environments, enhancing safety and responsiveness.",
   },
   {
-    img: "images/revenue.png",
-    title: "📊 Revenue Assurance Middleware For NLCC Services",
-    desc: "To strengthen financial tracking, NLCC's IT is building a revenue assurance middleware that will sit between clinical services and the billing system.",
+    img: "images/carepath-monitoring.jpg",
+    title: "🔄 Carepath Monitoring Toolset - CT-Aria Patient Data Profiling",
+    desc: "Advanced monitoring toolkit that profiles patient data from CT and Aria systems to track care pathways in real-time, ensuring seamless treatment progression and early identification of deviations.",
   },
   {
-    img: "https://i.ibb.co/cchghPYV/banner-3.jpg",
-    title: "📅 Survivorship Tracker",
-    desc: "The Survivorship Tracker is a custom-built module that consolidates post-treatment data for patients and supports automatic reporting.",
+    img: "images/reordering-plugin.jpg",
+    title: "🔄 Re-Ordering Plugin for Dispense App",
+    desc: "Smart re-ordering plugin integrated into the dispense application that automates medication and supply replenishment based on usage patterns, reducing stockouts and improving pharmacy workflow efficiency.",
   },
   {
-    img: "images/banner-6.jpg",
-    title: "💊 e-Chemo 2.0 : Smarter Prescriptions",
-    desc: "e-Chemo 2.0 now features task progress bars and faster regimen selection to reduce delays and improve control.",
+    img: "images/cloud-cctv.jpg",
+    title: "☁️ Cloud-Based CCTV Module - External View Coverage",
+    desc: "Secure cloud-hosted CCTV module providing comprehensive external view coverage with remote access, real-time alerts, and enhanced security monitoring for key hospital entry and perimeter areas.",
   },
   {
-    img: "images/banner-4.jpg",
-    title: "💻 Devices - Enterprise Scanners, Printers & Laptops",
-    desc: "Enterprise-grade printers, scanners & laptops have been deployed to enhance speed and reliability.",
+    img: "images/audit-monitoring.jpg",
+    title: "📊 Audit Efficiency Monitoring App by IT",
+    desc: "Internal IT-developed application that tracks and optimizes audit processes across departments, delivering real-time dashboards, compliance metrics, and actionable insights to improve operational efficiency.",
   },
   {
-    img: "images/visits.png",
-    title: "Visits to service stations - Reappraising the paperless process",
-    desc: "Digital maturity assessments are underway to align current operations with our paperless vision.",
+    img: "images/chemo-eprescription.jpg",
+    title: "💊 Chemo e-Prescription Solution & Upgrade for Old Patient Numbers",
+    desc: "Upgraded electronic chemotherapy prescribing system with full support for legacy (old) patient numbers, reducing prescription errors, ensuring safe regimen management, and maintaining continuity for long-term patients.",
   },
   {
-    img: "images/invoice-validation.jpg",
-    title: "💉 Invoice Validation & Chemo Cycle Management",
-    desc: "This feature validates prescriptions against approved chemo cycles to reduce billing errors and maintain paperless compliance.",
+    img: "images/patient-experience.jpg",
+    title: "📈 Patient Experience Dashboard - 1st Visit to Treatment Time Lag",
+    desc: "Comprehensive dashboard that tracks patient experience metrics from first visit through treatment initiation, highlighting time lags to enable faster interventions and improved care coordination.",
   },
   {
-    img: "images/email-access.jpg",
-    title: "Outlook Access to Zoho Mail - Granting same experience",
-    desc: "Outlook has been configured to work seamlessly with Zoho Mail, offering familiarity with backend reliability.",
+    img: "images/payment-tracker.jpg",
+    title: "💳 Payment Tracker - WebHook Integration with Bank Notification System",
+    desc: "Automated payment tracking solution with secure WebHook integration to bank notification systems for real-time transaction updates, faster reconciliation, and improved financial visibility.",
   },
   {
-    img: "images/cctv-room.jpg",
-    title: "Welcome to NLCC CCTV frontal coverage -Enhancing Security",
-    desc: "Front-facing CCTV now monitors key entry and patient-facing areas for round-the-clock security.",
-  },
-  {
-    img: "images/cybersec-img.jpg",
-    title: "CyberSecurity News",
-    desc: "Staff are reminded to avoid phishing emails. IT continues improving firewalls, patching, and monitoring.",
-  },
-  {
-    img: "images/password-sec.jpg",
-    title: "Email & Password security",
-    desc: "All staff must reset passwords every 90 days using strong, unique combinations not reused across platforms.",
-  },
-  {
-    img: "images/VPN-ACCESS.jpg",
-    title: "Dos and Don'ts of VPN Access",
-    desc: "Use VPN responsibly: keep credentials private, don’t use public Wi-Fi without protection, and always log out.",
-  },
-  {
-    img: "images/prjector-img.jpg",
-    title: "Tip - Projecting a laptop to Screen",
-    desc: "Connect to NLCC network, press 'Windows + P', select Duplicate or use HDMI. Call IT for help if needed.",
-  },
-  {
-    img: "images/ai-portal.png",
-    title: "Coming Soon - AI Portal",
-    desc: "NLCC's AI Portal will centralize intelligent tools across departments with seamless model integration.",
-  },
+    img: "images/reordering-notifications.jpg",
+    title: "🔔 Re-Ordering Cycle Notifications",
+    desc: "Intelligent notification system that automates re-ordering cycle alerts for medications and supplies, ensuring timely replenishment while minimizing manual intervention and stock discrepancies.",
+  }
+];
 ];
