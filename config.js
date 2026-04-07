@@ -36,36 +36,29 @@ The system also provides inventory analytics and reporting, enabling better dema
 By integrating IT with security workflows, we enhance patient and staff safety, deter unauthorized access, and preserve critical footage for compliance and investigation purposes.`
   },
   {
-    img: "images/audit-monitoring.jpg",
-    title: "Medserve IT Unit - 6️⃣ Audit and Compliance Monitoring",
-    desc: `We develop internal applications to monitor and optimize audit processes across departments. Real-time dashboards and compliance metrics provide visibility into performance and operational efficiency.
-
-These tools reduce errors, improve transparency, and ensure adherence to hospital policies and regulatory standards. Management can implement corrective actions promptly, strengthening overall governance.`
-  },
-  {
     img: "images/chemo-eprescription.jpg",
-    title: "Medserve IT Unit - 7️⃣ Chemo e-Prescription & Legacy Support",
-    desc: `Our team upgrades electronic chemotherapy prescribing systems to support both new and legacy patient records. This reduces prescription errors and ensures continuity of care for long-term patients.
+    title: "Medserve IT Unit - 6️⃣ Investigation & Treatment Stage Tracker",
+    desc: `Our IT Unit has developed a proposal for a color-coded tracking system within Aria, enabling patients and clinicians to clearly visualize treatment stages. Each stage—chemotherapy, billing, and radiation—is assigned a distinct color, helping patients monitor their progress at a glance and allowing staff to quickly identify pending tasks or next steps.
 
-The system streamlines clinician workflow by validating regimens and checking for drug interactions. It improves safety, efficiency, and confidence in chemotherapy management across the hospital.`
+This solution streamlines workflow, reduces confusion, and enhances communication between patients and care teams. By integrating treatment stage tracking with Aria, the IT Unit ensures safer, more transparent care, improves scheduling efficiency, and empowers patients to actively engage in their treatment journey.`
   },
   {
     img: "images/patient-experience.jpg",
-    title: "Medserve IT Unit - 8️⃣ Patient Experience Dashboard",
+    title: "Medserve IT Unit - 7️⃣ Patient Experience Dashboard",
     desc: `We design dashboards to track patient journey metrics from first visit to treatment initiation. This identifies time lags, bottlenecks, and areas for process improvement.
 
 By providing actionable insights to clinical and administrative teams, the IT Unit enables faster interventions, smoother patient flow, and higher satisfaction levels across the hospital.`
   },
   {
     img: "images/payment-tracker.jpg",
-    title: "Medserve IT Unit - 9️⃣ Payment Tracking & WebHook Integration",
+    title: "Medserve IT Unit - 8️⃣ Payment Tracking & WebHook Integration",
     desc: `Our team develops secure payment tracking solutions integrated with bank WebHooks for real-time monitoring of transactions. This reduces reconciliation delays and errors while ensuring transparency.
 
 Automated alerts notify finance teams of completed payments or anomalies. Patients benefit from accurate billing, and management gains reliable insights into financial operations.`
   },
   {
     img: "images/reordering-notifications.jpg",
-    title: "Medserve IT Unit - 🔟 Re-Ordering Cycle Notifications",
+    title: "Medserve IT Unit - 9️⃣ Re-Ordering Cycle Notifications",
     desc: `We implement automated notification systems for medication and supply re-ordering cycles. Timely alerts help prevent stockouts and reduce reliance on manual tracking.
 
 By combining notifications with inventory analytics, the IT Unit maintains a seamless, proactive supply chain that ensures uninterrupted patient care and efficient operations.`
