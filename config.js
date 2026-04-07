@@ -36,11 +36,10 @@ This minimizes stockouts, reduces manual intervention, and provides better deman
 This enhances patient and staff safety, deters unauthorized access, and supports compliance through secure footage preservation.`
   },
   {
-    img: "images/chemo-eprescription.jpg",
-    title: "Medserve IT Unit - 6️⃣ Investigation & Treatment Stage Tracker",
-    desc: `Our IT Unit developed a color-coded treatment stage tracker in Aria. 
+  img: "images/treatment-stage-tracker.jpg",   // ← This is the one
+  title: "Medserve IT Unit - 6️⃣ Investigation & Treatment Stage Tracker",
+  desc: `Our IT Unit developed a color-coded treatment stage tracker in Aria.
 Patients and clinicians can now clearly see each stage — chemotherapy, billing, and radiation — using distinct colors.
-
 This helps patients track their progress easily while allowing staff to quickly identify pending tasks and delays.`
 
   },
