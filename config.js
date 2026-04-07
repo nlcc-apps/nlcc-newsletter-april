@@ -42,7 +42,7 @@ This enhances patient and staff safety, deters unauthorized access, and supports
 Patients and clinicians can now clearly see each stage — chemotherapy, billing, and radiation — using distinct colors.
 
 This helps patients track their progress easily while allowing staff to quickly identify pending tasks and delays.`
-}
+
   },
   {
     img: "images/patient-experience.jpg",
