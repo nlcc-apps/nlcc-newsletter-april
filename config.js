@@ -40,7 +40,9 @@ This enhances patient and staff safety, deters unauthorized access, and supports
     title: "Medserve IT Unit - 6️⃣ Investigation & Treatment Stage Tracker",
     desc: `Our IT Unit has developed a color-coded treatment stage tracker within the Aria system. This solution allows patients and clinicians to clearly visualize each stage of treatment — chemotherapy, billing, and radiation — using distinct colors.
 
-It helps patients monitor their progress at a glance while enabling staff to quickly identify pending tasks and potential delays. By improving visibility and coordination, the tracker reduces confusion and ensures smoother, more efficient treatment delivery.`
+This allows patients and clinicians to clearly see each stage — chemotherapy, billing, and radiation — using distinct colors.
+
+It helps patients track their progress easily while enabling staff to quickly identify pending tasks and delays, improving coordination and treatment efficiency.`
   },
   {
     img: "images/patient-experience.jpg",
