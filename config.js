@@ -33,5 +33,20 @@ This ensures no patient is missed between the GE CT simulation system and ARIA b
 
 It enables the Radiotherapy team to verify daily scanned patient counts for consistency and accountability, while providing comprehensive reporting for daily and date-range tracking.`
   },
-  // ... rest of the slides remain unchanged
+{
+    img: "images/patient-experience.jpg",
+    title: "Medserve IT Unit - 6️⃣ Patient Experience Dashboard",
+    desc: We design dashboards to track patient journey metrics from first visit to treatment initiation, identifying time lags, bottlenecks, and areas for improvement. This enables faster interventions, smoother patient flow, and higher satisfaction levels across the hospital.
+  },
+  {
+    img: "images/payment-tracker.jpg",
+    title: "Medserve IT Unit - 7️⃣ Payment Tracking & WebHook Integration",
+    desc: Our team develops secure payment tracking solutions integrated with bank WebHooks for real-time transaction monitoring. This reduces reconciliation delays, ensures transparency, and provides automated alerts to improve financial visibility and accuracy.
+  },
+  {
+    img: "images/reordering-notifications.jpg",
+    title: "Medserve IT Unit - 8️⃣ Re-Ordering Cycle Notifications",
+    desc: We implement automated notification systems for medication and supply re-ordering cycles to prevent stockouts and minimize manual tracking. By combining timely alerts with inventory analytics, the IT Unit maintains a seamless and proactive supply chain that supports uninterrupted patient care.
+  }
+];
 ];
