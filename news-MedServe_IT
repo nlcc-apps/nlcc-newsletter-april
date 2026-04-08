@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MLCC IT Newsletter</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Hide default scroll bar */
+    background: #f9f9f9;
+  }
+  .logo-container {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  .logo {
+    max-width: 200px;
+    height: auto;
+  }
+  .slider {
+    height: calc(100vh - 80px); /* Full viewport minus logo */
+    overflow: hidden;
+    position: relative;
+  }
+  .slide {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .slide.active {
+    opacity: 1;
+    position: relative;
+  }
+  .slide img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  .slide h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  .slide p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    max-width: 900px;
+  }
+  .nav-buttons {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 100;
+  }
+  .nav-buttons button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #0073e6;
+    color: #fff;
+    transition: background 0.3s;
+  }
+  .nav-buttons button:hover {
+    background: #005bb5;
+  }
+</style>
+</head>
+<body>
+
+<div class="logo-container">
+  <img src="./medserve-logo.png" alt="MLCC Logo" class="logo" />
+</div>
+
+<div class="slider" id="slider">
+  <!-- Slides generated dynamically here -->
+</div>
+
+<div class="nav-buttons">
+  <button id="prevBtn">◀ Previous</button>
+  <button id="nextBtn">Next ▶</button>
+</div>
+
+<script>
+  // Config.js content embedded
+  const slideData = [
+    { img: "./images/cloud-cctv.jpg", title: "Medserve IT Unit - 1️⃣ Cloud-Based CCTV Management", desc: `Our unit is currently designing a CCTV system with sensory capability...` },
+    { img: "./images/cancer-companion.jpg", title: "Medserve IT Unit - 2️⃣ Cancer Patient Companion App", desc: `A dedicated mobile companion application for cancer patients...` },
+    { img: "./images/gesture-feedback.jpg", title: "Medserve IT Unit - 3️⃣ Gesture-Based Feedback System", desc: `Feedback engineering is a new dimension in care delivery...` },
+    { img: "./images/carepath-monitoring.jpg", title: "Medserve IT Unit - 4️⃣ Carepath Monitoring Toolset", desc: `The system leverages real-time ARIA data and the Check Paths repository...` },
+    { img: "./images/treatment-stage-tracker.jpg", title: "Medserve IT Unit - 5️⃣ Investigation & Treatment Stage Tracker", desc: `The Medserve IT Unit developed a robust color-coded Treatment Stage Tracker...` },
+    { img: "./images/patient-experience.jpg", title: "Medserve IT Unit - 6️⃣ Patient Experience Dashboard", desc: `The Patient Experience team ensures patients are promptly invited for treatment...` },
+    { img: "./images/imagepayment-tracker.jpg", title: "Medserve IT Unit - 7️⃣ Payment Tracking & WebHook Integration", desc: `A webhook-based architecture is proposed to enable secure, real-time payment tracking...` },
+    { img: "./images/reordering-notifications.jpg", title: "Medserve IT Unit - 8️⃣ Re-Ordering Cycle Notifications", desc: `We implemented an automated notification system to manage medication and supply reordering...` }
+  ];
+
+  const slider = document.getElementById("slider");
+
+  // Generate slides
+  slideData.forEach((slide, index) => {
+    const div = document.createElement("div");
+    div.classList.add("slide");
+    if (index === 0) div.classList.add("active");
+    div.innerHTML = `
+      <img src="${slide.img}" alt="${slide.title}" />
+      <h2>${slide.title}</h2>
+      <p>${slide.desc}</p>
+    `;
+    slider.appendChild(div);
+  });
+
+  const slides = document.querySelectorAll(".slide");
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      slide.style.transform = `translateY(${(i - index) * 100}%)`;
+    });
+    slides[index].classList.add("active");
+  }
+
+  document.getElementById("prevBtn").addEventListener("click", () => {
+    if (currentIndex > 0) currentIndex--;
+    showSlide(currentIndex);
+  });
+
+  document.getElementById("nextBtn").addEventListener("click", () => {
+    if (currentIndex < slides.length - 1) currentIndex++;
+    showSlide(currentIndex);
+  });
+
+  // Optional: handle mouse wheel scroll
+  let scrollTimeout;
+  window.addEventListener("wheel", e => {
+    if (scrollTimeout) return;
+    if (e.deltaY > 0 && currentIndex < slides.length - 1) currentIndex++;
+    else if (e.deltaY < 0 && currentIndex > 0) currentIndex--;
+    showSlide(currentIndex);
+    scrollTimeout = setTimeout(() => scrollTimeout = null, 500); // throttle
+  });
+</script>
+
+</body>
+</html>
