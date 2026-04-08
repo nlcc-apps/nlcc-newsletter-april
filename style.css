@@ -12,19 +12,6 @@ body {
 }
 
 
-.nav-buttons-top {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  gap: 20px;               /* Space between buttons */
-  margin-bottom: 20px;     /* Space below buttons */
-}
-
-.nav-buttons-top button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
 .logo-container {
   position: absolute;
   top: 20px;
