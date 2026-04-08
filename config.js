@@ -49,4 +49,3 @@ It enables the Radiotherapy team to verify daily scanned patient counts for cons
     desc: We implement automated notification systems for medication and supply re-ordering cycles to prevent stockouts and minimize manual tracking. By combining timely alerts with inventory analytics, the IT Unit maintains a seamless and proactive supply chain that supports uninterrupted patient care.
   }
 ];
-];
