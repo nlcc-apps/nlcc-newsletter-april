@@ -3,7 +3,7 @@ const slideData = [
   {
     img: "./images/cloud-cctv.jpg",                    // ← Old Section 4 is now Section 1
     title: "Medserve IT Unit - 1️⃣ Cloud-Based CCTV Management",
-    desc: `Our unit manages secure cloud-hosted CCTV solutions covering hospital entrances, perimeters, and critical zones.
+    desc: `Our unit is working towards deploying a secure cloud-hosted CCTV solutions covering hospital entrances, perimeters, and critical zones.
 Real-time monitoring and instant alerts enhance safety for patients and staff while supporting regulatory compliance.`
   },
   {
