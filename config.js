@@ -3,9 +3,9 @@ const slideData = [
   {
     img: "images/cancer-companion.jpg",
     title: "Medserve IT Unit - 1️⃣ Cancer Patient Companion App",
-    desc: `Our IT Unit developed a dedicated mobile companion app for cancer patients.
-Patients can track symptoms, set medication reminders, schedule appointments, and communicate securely with care teams.
-This solution enhances patient experience through personalized insights and timely notifications, strengthening continuity of care.`
+    desc: `A dedicated mobile companion application for cancer patients is currently being developed by the MLCC IT Unit, tailored to the Nigerian healthcare ecosystem.
+The platform integrates key functionalities including medication scheduling, appointment management, symptom tracking, real-time reporting, and personalized care recommendations, supported by intelligent notifications and secure communication channels.
+It remains an evolving solution, refined through multidisciplinary stakeholder input to enhance treatment adherence, enable timely clinical interventions, and ensure continuity of care..`
   },
   {
     img: "images/gesture-feedback.jpg",
