@@ -18,7 +18,7 @@ It remains an evolving solution, refined through multidisciplinary stakeholder i
     title: "Medserve IT Unit - 3️⃣ Gesture-Based Feedback System",
     desc: `Feedback engineering is a new dimension in care delivery, now enhanced by a touchless approach.
 Patients no longer need to fill out forms manually or press buttons, making interactions smarter and easier.
-We have implemented touchless gesture recognition in clinical areas for both patients and staff. This technology enables feedback submission by simply waving, and interface control without physical contact, reducing contamination risks. The system also improves workflow efficiency and response times in sterile environments.`
+We have implemented touchless gesture recognition in clinical areas for both patients and staff. This technology enables feedback submission by simply waving, and interface control without physical contact, reducing contamination risks. The system supports process improvemnts and excellent care delivery.`
   },
   {
     img: "./images/carepath-monitoring.jpg",
