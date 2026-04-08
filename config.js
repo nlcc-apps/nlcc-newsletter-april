@@ -42,7 +42,7 @@ The system identifies delays and bottlenecks, enabling faster interventions and 
 This results in higher satisfaction levels across the hospital.`
   },
   {
-    img: "images/imagepayment-tracker.jpg",     // ← FIXED: Correct image name for Section 7
+    img: "images/imagepayment-tracker.jpg",   // ← This should match your uploaded file
     title: "Medserve IT Unit - 7️⃣ Payment Tracking & WebHook Integration",
     desc: `Our team built secure payment tracking solutions with real-time bank WebHook integration.
 This reduces reconciliation delays and provides automated alerts for better financial visibility and accuracy.`
