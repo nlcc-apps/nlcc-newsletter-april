@@ -29,11 +29,11 @@ The toolset provides actionable insights for clinicians, helping optimize resour
 This enhances patient and staff safety, deters unauthorized access, and supports compliance through secure footage preservation.`
   },
   {
-    img: "images/treatment-stage-tracker.jpg",
-    title: "Medserve IT Unit - 5️⃣ Investigation & Treatment Stage Tracker",
-    desc: `The Medserve IT Unit developed a robust color-coded Treatment Stage Tracker integrated into the ARIA oncology information system. This ensures no patient is missed between the GE CT simulation system and ARIA, improving visibility across all treatment stages.
+  img: "images/treatment-stage-tracker.jpg",
+  title: "Medserve IT Unit - 5️⃣ Investigation & Treatment Stage Tracker",
+  desc: `The Medserve IT Unit developed a color-coded Treatment Stage Tracker integrated into ARIA, ensuring no patient is missed between the GE CT simulation system and ARIA.
 
-Accurate tracking monitors every simulated case transferred via the CT-to-ARIA DICOM bridge. The tool enables the Radiotherapy team to verify daily scanned patient counts, ensuring consistency, accountability, and a reliable end-to-end workflow.`
+It tracks all cases via the CT-to-ARIA DICOM bridge and enables the Radiotherapy team to verify daily patient counts, ensuring accuracy, consistency, and accountability.`
   },
   {
     img: "images/patient-experience.jpg",
