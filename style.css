@@ -11,7 +11,6 @@ body {
   flex-direction: column;
 }
 
-
 .logo-container {
   position: absolute;
   top: 20px;
@@ -41,7 +40,7 @@ body {
 .slide {
   display: none;
   flex-direction: column;
-  text-align: center;
+  min-height: 520px;           /* Helps prevent layout shift */
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -58,12 +57,15 @@ body {
 }
 
 .text {
-  padding: 20px;
+  padding: 25px 30px 20px;
+  flex: 1;                     /* Allows text area to grow */
+  display: flex;
+  flex-direction: column;
 }
 
 .text h2 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   color: #ffffff;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
 }
@@ -72,32 +74,78 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: #f1f1f1;
+  flex: 1;                     /* Pushes buttons down naturally */
 }
 
+/* ====================== NAVIGATION BUTTONS ====================== */
 .nav-buttons {
   display: flex;
   justify-content: space-between;
-  padding: 15px 30px;
-  background-color: rgba(0, 128, 0, 0.3);
-  border-top: 1px solid #ffffff22;
+  align-items: center;
+  padding: 18px 30px;
+  background-color: rgba(0, 100, 0, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: auto;            /* This pushes it to the bottom of the slide */
+  gap: 15px;
 }
 
+/* Button Styling - Beautiful & Professional */
 button {
-  padding: 10px 20px;
+  padding: 12px 28px;
   font-size: 1rem;
-  color: #006400;
-  background-color: #ffffff;
-  border: none;
+  font-weight: 600;
+  color: white;
+  background-color: #008000;
+  border: 2px solid #ffffff44;
   border-radius: 50px;
   cursor: pointer;
-  font-weight: bold;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+  min-width: 130px;
 }
 
 button:hover {
-  background-color: #ccffcc;
-  transform: scale(1.05);
+  background-color: #00b050;
+  border-color: #ffffff88;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 255, 0, 0.3);
+}
+
+/* Make Previous button slightly different if you want */
+button.prev {
+  background-color: #006400;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .text h2 {
+    font-size: 1.25rem;
+  }
+  .text p {
+    font-size: 0.95rem;
+  }
+  .banner {
+    height: 200px;
+  }
+  .logo {
+    height: 50px;
+  }
+  .logo-container {
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  .nav-buttons {
+    padding: 15px 20px;
+    flex-direction: column;        /* Stack on very small screens */
+    gap: 12px;
+  }
+  
+  button {
+    min-width: 100%;               /* Full width on mobile */
+  }
 }
 
 @keyframes fadeIn {
@@ -108,31 +156,5 @@ button:hover {
   to {
     opacity: 1;
     transform: scale(1);
-  }
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  .text h2 {
-    font-size: 1.2rem;
-  }
-
-  .text p {
-    font-size: 0.9rem;
-  }
-
-  .banner {
-    height: 200px;
-  }
-
-  .logo {
-    height: 40px;
-  }
-
-  .logo-container {
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
   }
 }
