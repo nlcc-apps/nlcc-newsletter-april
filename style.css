@@ -59,7 +59,7 @@ body {
 
 /* Text Area */
 .text {
-  padding: 28px 32px 20px;
+  padding: 28px 35px 20px;   /* Slightly more left/right padding for title breathing room */
   flex: 1;
   position: relative;
   z-index: 5;
@@ -77,7 +77,7 @@ body {
   color: #e0f0ff;
 }
 
-/* ==================== SMALLER & ELEGANT SIDE BUTTONS ==================== */
+/* ==================== SMALLER BUTTONS - MOVED TO EDGES ==================== */
 .nav-buttons {
   position: absolute;
   top: 50%;
@@ -86,7 +86,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 28px;
+  padding: 0 22px;           /* Reduced padding = buttons closer to edges */
   pointer-events: none;
   z-index: 15;
   transform: translateY(-50%);
@@ -94,8 +94,8 @@ body {
 
 .nav-buttons button {
   pointer-events: auto;
-  padding: 9px 20px;           /* Smaller padding */
-  font-size: 0.93rem;          /* Slightly smaller text */
+  padding: 8px 18px;         /* Smaller padding */
+  font-size: 0.91rem;        /* Smaller text */
   font-weight: 700;
   color: white;
   background: linear-gradient(#00c060, #008c00);
@@ -104,7 +104,7 @@ body {
   box-shadow: 0 5px 16px rgba(0,0,0,0.35);
   cursor: pointer;
   transition: all 0.3s ease;
-  min-width: 98px;             /* Smaller minimum width */
+  min-width: 92px;           /* Smaller overall size */
 }
 
 button.prev:hover {
@@ -121,7 +121,6 @@ button.next:hover {
 @media screen and (max-width: 768px) {
   .slider {
     width: 96%;
-    margin: 10px 0;
   }
   
   .banner {
@@ -136,7 +135,7 @@ button.next:hover {
     font-size: 1.32rem;
   }
   
-  /* On mobile, buttons move to bottom and stack nicely */
+  /* Buttons move to bottom on mobile for easy tapping */
   .nav-buttons {
     position: relative;
     top: auto;
@@ -148,8 +147,8 @@ button.next:hover {
   }
   
   .nav-buttons button {
-    min-width: 135px;
-    padding: 11px 26px;
+    min-width: 130px;
+    padding: 11px 24px;
     font-size: 1rem;
   }
 }
