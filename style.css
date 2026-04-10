@@ -40,7 +40,7 @@ body {
 .slide {
   display: none;
   flex-direction: column;
-  min-height: 560px;
+  min-height: 570px;        /* Extra height to prevent cropping */
   position: relative;
 }
 
@@ -57,9 +57,9 @@ body {
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Text Area */
+/* Text Area - More breathing room at the top */
 .text {
-  padding: 28px 35px 20px;   /* Slightly more left/right padding for title breathing room */
+  padding: 38px 35px 20px;     /* Increased top padding to stop cropping */
   flex: 1;
   position: relative;
   z-index: 5;
@@ -77,16 +77,15 @@ body {
   color: #e0f0ff;
 }
 
-/* ==================== SMALLER BUTTONS - MOVED TO EDGES ==================== */
+/* ==================== SMALLER BUTTONS - CLOSER TO EDGES ==================== */
 .nav-buttons {
   position: absolute;
   top: 50%;
-  left: 0;
-  right: 0;
+  left: 12px;                  /* Closer to left edge */
+  right: 12px;                 /* Closer to right edge */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 22px;           /* Reduced padding = buttons closer to edges */
   pointer-events: none;
   z-index: 15;
   transform: translateY(-50%);
@@ -94,8 +93,8 @@ body {
 
 .nav-buttons button {
   pointer-events: auto;
-  padding: 8px 18px;         /* Smaller padding */
-  font-size: 0.91rem;        /* Smaller text */
+  padding: 7px 17px;           /* Smaller size */
+  font-size: 0.89rem;          /* Smaller text */
   font-weight: 700;
   color: white;
   background: linear-gradient(#00c060, #008c00);
@@ -104,17 +103,17 @@ body {
   box-shadow: 0 5px 16px rgba(0,0,0,0.35);
   cursor: pointer;
   transition: all 0.3s ease;
-  min-width: 92px;           /* Smaller overall size */
+  min-width: 88px;
 }
 
 button.prev:hover {
   background: linear-gradient(#00d070, #009900);
-  transform: scale(1.08) translateX(-5px);
+  transform: scale(1.08) translateX(-4px);
 }
 
 button.next:hover {
   background: linear-gradient(#00d070, #009900);
-  transform: scale(1.08) translateX(5px);
+  transform: scale(1.08) translateX(4px);
 }
 
 /* ====================== MOBILE RESPONSIVE ====================== */
@@ -128,18 +127,20 @@ button.next:hover {
   }
   
   .text {
-    padding: 24px 28px 20px;
+    padding: 32px 28px 20px;
   }
   
   .text h2 {
     font-size: 1.32rem;
   }
   
-  /* Buttons move to bottom on mobile for easy tapping */
+  /* Buttons go to bottom on mobile */
   .nav-buttons {
     position: relative;
     top: auto;
     transform: none;
+    left: 0;
+    right: 0;
     padding: 15px 20px 25px;
     justify-content: center;
     gap: 18px;
